@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TbibDz - Medical Appointment System
 
 ## Prerequisites
@@ -147,3 +148,6 @@ tabibdz/
 ├── package.json
 └── server.js
 ``` 
+=======
+# TabibDz
+>>>>>>> 2f6cc03ab24e787d72b164249ef476cac4b98728
