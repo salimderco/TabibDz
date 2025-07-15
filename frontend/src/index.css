@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    @apply h-full;
+  }
+
+  body {
+    @apply h-full bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 m-0;
+  }
+
+  #root {
+    @apply h-full;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+  }
+
+  .input-field {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-500;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow p-6;
+  }
+
+  .link {
+    @apply text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300;
+  }
+
+  .heading-1 {
+    @apply text-4xl font-bold text-gray-900 dark:text-white sm:text-5xl;
+  }
+
+  .heading-2 {
+    @apply text-3xl font-bold text-gray-900 dark:text-white;
+  }
+
+  .heading-3 {
+    @apply text-2xl font-bold text-gray-900 dark:text-white;
+  }
+
+  .text-body {
+    @apply text-base text-gray-500 dark:text-gray-400;
+  }
+
+  .toast {
+    @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white;
+  }
+
+  .toast-success {
+    @apply bg-green-50 dark:bg-green-900;
+  }
+
+  .toast-error {
+    @apply bg-red-50 dark:bg-red-900;
+  }
+
+  .spinner {
+    @apply animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white;
+  }
+}
